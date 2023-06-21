@@ -41,5 +41,4 @@ class ValidatorTests {
         assertThat(violation.getPropertyPath().toString()).isEqualTo("firstName");
         assertThat(violation.getMessage()).isEqualTo("must not be empty");
     }
-
 }
