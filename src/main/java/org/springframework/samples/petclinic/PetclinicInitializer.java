@@ -55,6 +55,7 @@ public class PetclinicInitializer extends AbstractDispatcherServletInitializer {
     
     @Override
     protected WebApplicationContext createRootApplicationContext() {
+        System.out.println("azaza");
         XmlWebApplicationContext rootAppContext = new XmlWebApplicationContext();
         rootAppContext.setConfigLocations("classpath:spring/business-config.xml", "classpath:spring/tools-config.xml");
         rootAppContext.getEnvironment().setDefaultProfiles(SPRING_PROFILE);
